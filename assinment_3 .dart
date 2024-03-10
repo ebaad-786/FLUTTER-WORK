@@ -36,7 +36,25 @@
       print ("NOT A LEAP YEAR");
       
     }
-   //question 3//
+   //question 2//
+   var character=25;
+  
+   if (character.toString() .toLowerCase()!=character.toString() .toUpperCase()  ){
+    
+    print ("CHARACTER IS ALPHABET");
+  }
+  
+ else if 
    
+   (num.tryParse (character.toString())!=null){
+   
+   print ("CHARACTER IS A DIGIT");
+ 
+   } 
+  
+  else {
+    
+    print ("CHARACTER IS A SPECIAL");
+  }
   }
 
