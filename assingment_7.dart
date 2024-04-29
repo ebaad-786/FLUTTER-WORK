@@ -80,15 +80,29 @@ for (var n5 in values) {
   if (n5>5) {
 
   print(n5);
+
+}
   
 }
-  
+
+//question number 7//
+
+var ab="shahzeb";
+  String input = ab.toLowerCase();
+int vowelCount = 0;
+
+  List<String> vowels = ['a', 'e', 'i', 'o', 'u'];
+ for (int i = 0; i < input.length; i++) {
+    if (vowels.contains(input[i])) {
+      vowelCount++;
+    }
+
+print("Number of vowels in the string: $vowelCount");
+
+
+
 }
 
 
 
-
 }
-
-
-
