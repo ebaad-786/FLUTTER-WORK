@@ -37,7 +37,7 @@
       
     }
    //question 2//
-   var character=25;
+   var character="farhan";
   
    if (character.toString() .toLowerCase()!=character.toString() .toUpperCase()  ){
     
