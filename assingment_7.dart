@@ -99,10 +99,5 @@ int vowelCount = 0;
 
 print("Number of vowels in the string: $vowelCount");
 
-
-
 }
-
-
-
 }
