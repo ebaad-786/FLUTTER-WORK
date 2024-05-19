@@ -13,6 +13,8 @@ printMyName(
   printTableMy(table: tableNumberMy);
 }
 
+
+
 printTableMy({table, ab, cd}) {
   for (var i = 1; i <= 10; i++) {
     print(i * table);

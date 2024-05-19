@@ -95,21 +95,15 @@ sum1 *=digit1;
 print({"THE FACTORIAL OF THE NUMBER 5 is $sum1"}); 
 
 //question number 7//
+int counter=0;
 
-
-// int counter=0;
-  
-
-// for (var i = 1 ; counter < 10; i++) {
-
-// if (i/1==i && i/i==1) {
-
-// print(i);
-
-// counter++;
-
-//}      
-//}
+for (int num = 2; counter < 10; num++) {
+    if (isPrime(num)) {
+      print(num);
+      counter++;
+    }
+  }
+  print("------");
  //question number 8//
 
  int number3 = 10;
@@ -129,18 +123,50 @@ abg++;
 } while (abg<6);
 
 //question number 10//
-List<int>kit=[24,34,54,65,85];
+List<int>numbers=[24,34,54,65,85];
 int sum2=0;
-int count=0;
+int count1=0;
 
 do {
-sum2+=kit[count];
-count++;
-} while (count<=kit.length);
+sum2+=numbers[count1];
+count1++;
+} while (count1 < numbers.length);
 
-double average=sum2/kit.length;
+double average=sum2/numbers.length;
 
 print("average is$average");
+
+
+//question 11//
+int num1 = 987654321;
+  int largestDigit = 0;
+  do {
+    int digit = num1 % 10;
+    if (digit > largestDigit) {
+      largestDigit = digit;
+    }
+    num1 ~/= 10;
+  } while (num1 != 0);
+  print('Largest digit: $largestDigit');
+
+  //question number 12//
+ int number5 = 2;
+  do {
+    print(number5);
+    number5 += 2;
+  } while (number5 <= 20);
+}
+
+bool isPrime(int num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (int i = 2; i * i <= num; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 
